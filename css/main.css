@@ -72,3 +72,68 @@ body {
     background-color: #e0d2c8;
   }
   
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  body {
+      padding: 10px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      min-height: 100vh !important;
+      height: auto !important;
+  }
+  
+  .logo {
+      position: static !important;
+      margin: 20px auto !important;
+      text-align: center;
+  }
+  
+  .form-container {
+      width: 90% !important;
+      max-width: 400px !important;
+      margin: 20px auto !important;
+      padding: 20px !important;
+  }
+  
+  .form-title {
+      font-size: 24px !important;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+      width: 100% !important;
+      font-size: 16px !important; /* iOSのズーム防止 */
+      padding: 12px !important;
+      box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+      width: 100% !important;
+      font-size: 16px !important;
+      padding: 15px !important;
+  }
+  
+  label {
+      font-size: 14px !important;
+  }
+  
+  a {
+      font-size: 14px !important;
+      word-break: break-word;
+  }
+}
+
+/* 小さい画面用 */
+@media (max-width: 480px) {
+  .form-container {
+      width: 95% !important;
+      padding: 15px !important;
+  }
+  
+  .form-title {
+      font-size: 20px !important;
+  }
+}
