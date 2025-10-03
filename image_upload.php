@@ -110,6 +110,74 @@ $user_id = $_SESSION["user_id"];
             max-width: 500px !important;
         }
 
+        /* 携帯用 */
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px !important;
+            }
+            
+            .content-wrapper {
+                width: 100%;
+                padding: 0 10px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            p {
+                font-size: 14px;
+            }
+            
+            
+            form > div:first-child {
+                width: calc(100% - 20px) !important;
+                max-width: none !important;
+                padding: 30px 15px !important;
+                margin: 20px 10px !important;
+                box-sizing: border-box;
+            }
+            
+            form > div:first-child h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            
+            form > div:first-child p {
+                font-size: 13px;
+                margin-bottom: 15px;
+            }
+            
+            form > div:first-child label {
+                padding: 12px 20px !important;
+                font-size: 14px !important;
+            }
+            
+            .upload-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .analyze-btn {
+                width: calc(100% - 20px);
+                margin: 20px 10px;
+                padding: 15px;
+            }
+            
+            #previewContainer {
+                padding: 0 10px;
+            }
+            
+            .upload-item {
+                padding: 15px;
+            }
+            
+            .progress {
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
